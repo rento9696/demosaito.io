@@ -1,600 +1,87 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
-<head>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-	<meta http-equiv="Content-Script-Type" content="text/javascript" />
-	<meta http-equiv="Content-Stype-Type" content="text/css" />
-	<meta name="Keywords" content="ぼくのなつやすみ,ぼくなつ,ミレニアムキッチン,ソニー・コンピュータエンタテインメント,プレイステーション,ps3,psp,pspgo,psn,sony,ソフト,プレステ,ゲーム" />
-	<meta name="Description" content="SCEソフトウェア『ぼくのなつやすみ』シリーズの公式ポータルサイトです。" />
-	<meta name="Copyright" content="&copy;2011 Sony Computer Entertainment Inc. All Rights Reserved." />
-	
-	<!-- fb -->
-	<meta property="og:title" content="ぼくのなつやすみ ポータルサイト | プレイステーション&reg; オフィシャルサイト" /> 
-	<meta property="og:description" content="ヒミツの秘密基地にぼくなつシリーズが勢ぞろい！" /> 
-	<meta property="og:image" content="http://www.jp.playstation.com/scej/title/bokunatsu/img/thumb_img.jpg" /><!-- image -->
-	<meta property="og:site_name" content="ぼくのなつやすみ ポータルサイト | プレイステーション&reg; オフィシャルサイト" />
-	<!-- /fb -->
-	
-	<link rel="stylesheet" type="text/css" href="/common/css/base.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/bokunatsu.css" media="all" />
-	<script src="/common/js/mbox.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/jquery-latest.pack.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
-	
-	<title>ぼくのなつやすみ ポータルサイト | プレイステーション&reg; オフィシャルサイト</title>
-</head>
-<body>
-<!--<div id="container">-->
-
-<!-- header -->
-<div class="megadroparearef headerSetting">
-</div>
-<div id= "megaDropDownParts" style="position: relative;">
-    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
-    <!-- HEADER -->
-    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
-    <div id="global-header" class="psc-section-header">
-        <!-- Sony Logo -->
-        <div id="sony-area" class="psc-row-sony">
-            <a class="psc-link-sony" href="http://www.sony.co.jp/SonyInfo/" target="_blank">
-                <img src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/sony_logo.svg" alt="Sony">
-            </a>
-        </div>
-        <!-- Browser Alert -->
-        <div id="browser-alert" class="psc-browser-alert">
-            <div>
-                <p class="psc-align-center psc-col-orange">
-                    ご利用のブラウザーでは正しく表示されない場合があります。<br />当社が基本動作を確認しているブラウザーは <a href="http://www.jp.playstation.com/about/browse.html">サイトについて</a> をご覧ください。
-                </p>
-            </div>
-        </div>
-        <!-- グローバルナビゲーション -->
-        <!-- ★グローバルナビゲーション --><div id="tracking-mdd-menu" class="psc-global-container">
-    <ul id="psc-pc-global-nav" class="psc-row-global-nav">
-        <li id="nav-0" class="psc-cell-global-ps">
-            <a class="psc-link-global-ps" href="http://www.jp.playstation.com/index.html?hfclick=HDR_ghomescrt">
-                <img src="//www.jp.playstation.com/content/dam/pscom/ja-jp/header/icon_ps_pc.svg" alt="PlayStation">
-            </a>
-        </li>
-        <li id="nav-1" class="psc-cell-global" data-id="#mdd-products">                <a class="psc-link-global" href="javascript:void(0);">            <span class="psc-pc-label-visible">製品情報</span>
-            <span class="psc-sp-label-visible">製品<br>情報</span>
-                    <img src="//www.jp.playstation.com/content/dam/pscom/ja-jp/header/icon_mdd.svg" alt="">                </a>            </li>        <li id="nav-2" class="psc-cell-global" data-id="#mdd-games">                <a class="psc-link-global" href="javascript:void(0);">            <span class="psc-pc-label-visible">ゲームソフト</span>
-            <span class="psc-sp-label-visible">ゲーム<br>ソフト</span>
-                    <img src="//www.jp.playstation.com/content/dam/pscom/ja-jp/header/icon_mdd.svg" alt="">                </a>            </li>        <li id="nav-3" class="psc-cell-global" data-id="#mdd-psn">                <a class="psc-link-global-support" href="javascript:void(0);">            <span class="psc-pc-label-visible">PSN</span>
-            <span class="psc-sp-label-visible">PSN</span>
-                    <img src="//www.jp.playstation.com/content/dam/pscom/ja-jp/header/icon_mdd.svg" alt="">                </a>            </li>        <li id="nav-4" class="psc-cell-global" data-id="#mdd-news">                <a class="psc-link-global-support" href="javascript:void(0);">            <span class="psc-pc-label-visible">ニュース</span>
-            <span class="psc-sp-label-visible">ニュース</span>
-                    <img src="//www.jp.playstation.com/content/dam/pscom/ja-jp/header/icon_mdd.svg" alt="">                </a>            </li>        <li id="nav-5" class="psc-cell-global" data-id="#mdd-support">                <a class="psc-link-global-support" href="javascript:void(0);">            <span class="psc-pc-label-visible">サポート</span>
-            <span class="psc-sp-label-visible">サポート</span>
-                    <img src="//www.jp.playstation.com/content/dam/pscom/ja-jp/header/icon_mdd.svg" alt="">                </a>            </li>        <li id="nav-6" class="psc-cell-global" data-id="#mdd-store">                <a class="psc-link-global-support" href="javascript:void(0);">            <span class="psc-pc-label-visible">購入</span>
-            <span class="psc-sp-label-visible">購入</span>
-                    <img src="//www.jp.playstation.com/content/dam/pscom/ja-jp/header/icon_mdd.svg" alt="">                </a>            </li>        </ul>    <!-- SP用PSロゴ -->
-    <div id="psc-sp-global-nav">
-            <a class="psc-link-global-ps" href="http://www.jp.playstation.com/index.html?hfclick=HDR_sp_ghomescrt">
-                <img src="//www.jp.playstation.com/content/dam/pscom/ja-jp/header/icon_ps_sp.svg" alt="PlayStation">
-        </a>
-    </div>
-        <div id="nav-search-sb" class="is-active">
-            <div id="sb-social-toolbar-root"></div>
-            <div id="nav-search" class="psc-cell-global-search">
-                <div id="megadropParts-load-1">
-<form action="/search/" class="psc-global-search" id="site-search" method="get" target="_top">
-  <fieldset id="nav-global-search">
-    <input autocomplete="off" id="MF_form_phrase" name="q" placeholder="
-検索ワードを入力" type="text" />
-    <input onclick="execHeadSearch();" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_navi-search.svg" type="image" />
-  </fieldset>
-</form>                </div>
-            </div>
-        </div>
-    <!-- SP用ナビゲーション ハンバーガーメニュー -->
-    <a id="psc-sp-nav-toggle" class="nav-global-toggle" href="javascript:void(0);">
-        <img src="//www.jp.playstation.com/content/dam/pscom/ja-jp/header/icon_menu.svg" alt="メニュー">
-    </a>
-</div>
-    </div>
-    <!-- メガドロップダウン -->
-    <!-- ★メガドロップダウン --><div id="mdd"class="psc-mdd-container psc-bg-mdd"><div class="psc-mdd-empty-area"></div>    <div id="mdd-products" class="psc-mdd-inner" style="display: none;" ><div id='_content_pscom_ja-jp_common_pages_megadropdown_products_jcr_content_par_megadropdown' class='tracking-mdd'><ul class="psc-row-mdd">
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/ps4/?hfclick=HDR_ps4topp" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_playstation4.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation®4</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/psvr/?hfclick=HDR_psvrtopp" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_psvr_cuhzvr2.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation®VR</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/psvita/?hfclick=HDR_psvitatopp" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_playstationvita.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation®Vita</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="https://www.jp.playstation.com/psclassic/" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_psclassic.png" alt="">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation®Classic</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/nasne/?hfclick=HDR_nasnetopp" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_nasne.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">nasne（ナスネ）™</h4>
-        </div>
-        </a>
-    </li>
-</ul><ul class="psc-row-mdd psc-pdt32">
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/official-products/" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_officiallicensedproduct.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">ライセンス商品</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
-    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
-    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
-    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
-</ul><script type="text/javascript">    function megaDropDown_color(obj, color) {        $(obj).find("h4").css("color", color);    }</script></div>    </div>    <div id="mdd-games" class="psc-mdd-inner" style="display: none;" ><div id='_content_pscom_ja-jp_common_pages_megadropdown_games_jcr_content_par_megadropdown' class='tracking-mdd'><ul class="psc-row-mdd">
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/ps4/games/?hfclick=HDR_MD_ps4game" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_ps4games.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PS4®ゲームソフト</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="https://www.jp.playstation.com/psvr/games/" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_psvrgames.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PS VRゲームソフト</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="https://www.jp.playstation.com/search-results/software/search.x?platform=PS+Vita&past=nowonsale&future=14&sort=1&hfclick=HDR_MD_psvitagame" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_psvitagames.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PS Vitaゲームソフト</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="https://www.jp.playstation.com/games/sie/" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_games.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">SIEのゲームソフト</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="https://www.jp.playstation.com/games/" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu-games-finder.svg" alt="">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">ゲームソフトを探す</h4>
-        </div>
-        </a>
-    </li>
-</ul><script type="text/javascript">    function megaDropDown_color(obj, color) {        $(obj).find("h4").css("color", color);    }</script></div>    </div>    <div id="mdd-psn" class="psc-mdd-inner" style="display: none;" ><div id='_content_pscom_ja-jp_common_pages_megadropdown_psn_jcr_content_par_megadropdown' class='tracking-mdd'><ul class="psc-row-mdd">
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/psn/?hfclick=HDR_psntopp" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_psn.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PSN</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/psn/playstation-store/?hfclick=HDR_psnstore" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_playstationstore.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation™Store</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/psn/playstation-plus/?hfclick=HDR_DR_psnplus" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_playstationplus.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation®Plus</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/psn/playstation-now/?hfclick=HDR_psnow" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_playstationnow.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation™Now</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/psn/playstation-video/?hfclick=HDR_psnvstore" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_playstationvideo.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation™Video</h4>
-        </div>
-        </a>
-    </li>
-</ul><ul class="psc-row-mdd psc-pdt32">
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/psn/playstation-music/?hfclick=HDR_psmusic" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_playstationmusic.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation™Music</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/psn/playstation-app/?hfclick=HDR_psnpsapp" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_playstationapp.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation®App</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
-    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
-    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
-</ul><script type="text/javascript">    function megaDropDown_color(obj, color) {        $(obj).find("h4").css("color", color);    }</script></div>    </div>    <div id="mdd-news" class="psc-mdd-inner" style="display: none;" ><div id='_content_pscom_ja-jp_common_pages_megadropdown_news_jcr_content_par_megadropdown' class='tracking-mdd'><ul class="psc-row-mdd">
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/psblog/?hfclick=HDR_psblog" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_playstationblog.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PlayStation®.Blog</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/events/?hfclick=HDR_events" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_events.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">イベント情報</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="http://www.jp.playstation.com/info/release/?hfclick=HDR_release" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_pressrelease.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">プレスリリース</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
-    <li class="psc-cell-mdd"><!-- 空ナビ --></li>
-</ul><script type="text/javascript">    function megaDropDown_color(obj, color) {        $(obj).find("h4").css("color", color);    }</script></div><div id='_content_pscom_ja-jp_common_pages_megadropdown_news_jcr_content_par_headermenu_iconandte' class='tracking-mdd'><div class="psc-mdd-btn">
-    <ul class="psc-row-mdd-btn">
-        <li class="psc-cell-mdd psc-pd8">
-            <a class="psc-d-table psc-hover-light psc-hover-mdd" href="https://twitter.com/PlayStation_jp?hfclick=HDR_tw" target="_blank">
-                <img id="" class="psc-w40 psc-va-mid" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_twitter.png" alt=" ">
-                <h4 class="psc-pdl8 psc-fs12 psc-sst-regular psc-va-mid psc-d-inline psc-col-white">Twitter</h4>
-            </a>
-        </li>
-        <li class="psc-cell-mdd psc-pd8">
-            <a class="psc-d-table psc-hover-light psc-hover-mdd" href="https://www.facebook.com/PlayStationJapan?hfclick=HDR_fb" target="_blank">
-                <img id="" class="psc-w40 psc-va-mid" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_facebook.png" alt=" ">
-                <h4 class="psc-pdl8 psc-fs12 psc-sst-regular psc-va-mid psc-d-inline psc-col-white">Facebook</h4>
-            </a>
-        </li>
-        <li class="psc-cell-mdd psc-pd8">
-            <a class="psc-d-table psc-hover-light psc-hover-mdd" href="https://www.youtube.com/user/playstationjp/index.html?hfclick=HDR_yt" target="_blank">
-                <img id="" class="psc-w40 psc-va-mid" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_youtube.png" alt=" ">
-                <h4 class="psc-pdl8 psc-fs12 psc-sst-regular psc-va-mid psc-d-inline psc-col-white">YouTube</h4>
-            </a>
-        </li>
-        <li class="psc-cell-mdd psc-pd8">
-            <a class="psc-d-table psc-hover-light psc-hover-mdd" href="https://www.instagram.com/playstation_jp/" target="_self">
-                <img id="" class="psc-w40 psc-va-mid" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_instagram.png" alt=" ">
-                <h4 class="psc-pdl8 psc-fs12 psc-sst-regular psc-va-mid psc-d-inline psc-col-white">Instagram</h4>
-            </a>
-        </li>
-        <li class="psc-cell-mdd psc-pd8">
-            <a class="psc-d-table psc-hover-light psc-hover-mdd" href="http://line.me/ti/p/@playstation?hfclick=HDR_line" target="_blank">
-                <img id="" class="psc-w40 psc-va-mid" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_line.png" alt=" ">
-                <h4 class="psc-pdl8 psc-fs12 psc-sst-regular psc-va-mid psc-d-inline psc-col-white">Line</h4>
-            </a>
-        </li>
-    </ul>
-</div>
-</div><div id='_content_pscom_ja-jp_common_pages_megadropdown_news_jcr_content_par_headermenu_iconandte_1328846539' class='tracking-mdd'><div class="psc-mdd-btn">
-    <ul class="psc-row-mdd-btn">
-        <li class="psc-cell-mdd psc-pd8">
-            <a class="psc-d-table psc-hover-light psc-hover-mdd" href="https://www.jp.playstation.com/sys/optin/?hfclick=HDR_psnoptin" target="_self">
-                <img id="" class="psc-w40 psc-va-mid" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_mailmagazine.png" alt="">
-                <h4 class="psc-pdl8 psc-fs12 psc-sst-regular psc-va-mid psc-d-inline psc-col-white">メール配信サービス</h4>
-            </a>
-        </li>
-        <li class="psc-cell-mdd psc-pd8"></li>
-        <li class="psc-cell-mdd psc-pd8"></li>
-        <li class="psc-cell-mdd psc-pd8"></li>
-        <li class="psc-cell-mdd psc-pd8"></li>
-    </ul>
-</div>
-</div>    </div>    <div id="mdd-support" class="psc-mdd-inner" style="display: none;" ><div id='_content_pscom_ja-jp_common_pages_megadropdown_support_jcr_content_par_megadropdown' class='tracking-mdd'><ul class="psc-row-mdd">
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="https://www.jp.playstation.com/support/" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_support.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">サポート</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="https://status.playstation.com/ja-jp/?smcid=web:pdc:status:support-subnav" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_psnstatus_large.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PSNステータス</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="https://www.jp.playstation.com/psn/state2.html" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_psn.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PSN障害メンテナンス</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="https://connection.support.playstation.com/jp_JP?emcid=info_suptop_50376#/" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_fixandconnect_large.svg" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">PS4接続診断</h4>
-        </div>
-        </a>
-    </li>
-    <li class="psc-cell-mdd">
-        <a class="psc-link-mdd psc-hover-mdd" href="https://www.jp.playstation.com/support/onlinerps/?emcid=info_suptop_50375" target="_self" onmouseover="megaDropDown_color(this, '#00a2ff');" onmouseout="megaDropDown_color(this, '#ffffff');">
-        <div>
-         <img class="psc-w64p" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_support_large.png" alt=" ">
-        </div>
-        <div class="psc-mdd-nav-title">
-         <h4 class="psc-fs14 psc-sst-regular psc-pdt8 psc-col-white" style="color:#ffffff">故障診断・修理受付</h4>
-        </div>
-        </a>
-    </li>
-</ul><script type="text/javascript">    function megaDropDown_color(obj, color) {        $(obj).find("h4").css("color", color);    }</script></div><div id='_content_pscom_ja-jp_common_pages_megadropdown_support_jcr_content_par_megadropdownbottom' class='tracking-mdd'><div class="psc-mdd-btn">
-    <ul class="psc-row-mdd-btn">
-        <li class="psc-cell-mdd psc-pd8">
-            <a class="psc-d-table psc-hover-light psc-hover-mdd" href="https://support.asia.playstation.com/jajp/s/article/ans-jajp50359?emcid=info_suptop_50359" target="_self">
-                <img id="" class="psc-w48 psc-va-mid" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_accountfaq.svg" alt=" ">
-                <h4 class="psc-pdl8 psc-fs12 psc-sst-regular psc-va-mid psc-d-inline psc-col-white">アカウントFAQ</h4>
-            </a>
-        </li>
-        <li class="psc-cell-mdd psc-pd8">
-            <a class="psc-d-table psc-hover-light psc-hover-mdd" href="https://support.asia.playstation.com/jajp/s/supportcommunity?emcid=info_suptop_minsapo" target="_self">
-                <img id="" class="psc-w48 psc-va-mid" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_supportcommunity.svg" alt=" ">
-                <h4 class="psc-pdl8 psc-fs12 psc-sst-regular psc-va-mid psc-d-inline psc-col-white">サポートコミュニティー</h4>
-            </a>
-        </li>
-        <li class="psc-cell-mdd psc-pd8">
-            <a class="psc-d-table psc-hover-light psc-hover-mdd" href="https://twitter.com/AskPS_JP" target="_blank">
-                <img id="" class="psc-w40 psc-va-mid" src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_twitter.png" alt="">
-                <h4 class="psc-pdl8 psc-fs12 psc-sst-regular psc-va-mid psc-d-inline psc-col-white">Ask PlayStation JP</h4>
-            </a>
-        </li>
-        <li class="psc-cell-mdd psc-pd8"></li>
-        <li class="psc-cell-mdd psc-pd8"></li>
-    </ul>
-</div>
-</div>    </div>    <div id="mdd-store" class="psc-mdd-inner" style="display: none;" ><div id='_content_pscom_ja-jp_common_pages_megadropdown_buy_jcr_content_par_headermenu_iconandli_0' class='tracking-mdd'><div class="psc-mdd-cell">
-    <a class="psc-mdd-category-link" href="https://store.playstation.com/ja-jp/home/games?SMCID=jGMpscomheader_storetop" target="_blank">
-        <span><img src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_playstationstore.png" alt=" "></span>
-        <span>PlayStation™Store</span>
-    </a>
-    <ul class="psc-mdd-link-list">
-        <li><a href="https://store.playstation.com/ja-jp/grid/PN.CH.JP-PN.CH.MIXED.JP-GAMECAMPAIGN/1?SMCID=jGMpscomheader_campaign" target="_blank">セール・キャンペーン</a></li>
-        <li><a href="https://store.playstation.com/ja-jp/grid/PN.CH.JP-PN.CH.MIXED.JP-GAMERANKING/1?SMCID=jGMpscomheader_ranking" target="_blank">ランキング</a></li>
-        <li><a href="https://store.playstation.com/ja-jp/grid/PN.CH.JP-PN.CH.MIXED.JP-CATEGORY00000337/1?SMCID=jGMpscomheader_preorder" target="_blank">予約販売</a></li>
-        <li><a href="https://store.playstation.com/ja-jp/grid/PN.CH.JP-PN.CH.MIXED.JP-PLUSSUBSCRIPTION/1?SMCID=jGMpscomheader_plus" target="_blank">PS Plus利用権</a></li>
-    </ul>
-</div>
-<div class="psc-mdd-cell">
-    <a class="psc-mdd-category-link" href="http://www.sony.jp/playstation/index.html?s_tc=st_gp_sce_header_store" target="_blank">
-        <span><img src="//www.jp.playstation.com/content/dam/pscom/regional-assets/header/menu_sonystore.png" alt=" "></span>
-        <span>ソニーストア</span>
-    </a>
-    <ul class="psc-mdd-link-list">
-        <li><a href="http://www.sony.jp/playstation/ps4/index.html?s_tc=st_gp_sce_header_ps4" target="_blank">PlayStation®4</a></li>
-        <li><a href="http://www.sony.jp/playstation/psvr/?s_tc=st_gp_sce_header_psvr" target="_blank">PlayStation®VR</a></li>
-        <li><a href="http://www.sony.jp/playstation/psvita/index.html?s_tc=st_gp_sce_header_psvita" target="_blank">PlayStation®Vita</a></li>
-    </ul>
-</div>
-</div>    </div></div>
-</div>
-    <!-- /header -->
-
-<!-- contents -->
-	<p id="hpPageBody" class="acc">本文の開始</p>
-	<div id="contentsWrp">
-		<div id="contents-bokunatsu">
-			<h1><img src="img/title_h1.gif" width="860" height="83" alt="ぼくのなつやすみ®ポータルサイト　ヒミツの秘密基地にぼくなつシリーズが勢ぞろい！" /></h1>
-      <div id="top-main"> 
-      	<p><img src="img/main.jpg" width="900" height="368" alt="" /></p>
-      	<p id="btn-bokunatsu2"><a href="http://www.jp.playstation.com/scej/title/bokunatsu/p2/"><img src="img/btn_bokunatsu2.jpg" alt="公式サイトへ" width="179" height="54" class="over" /></a></p>
-        <p id="btn-bokunatsu3"><a href="http://www.jp.playstation.com/scej/title/bokunatsu/3/"><img src="img/btn_bokunatsu3.jpg" alt="公式サイトへ" width="179" height="54" class="over" /></a></p>
-      </div>
-      <div id="top-history"> 
-        <p><img src="img/jacket.jpg" alt="「ボク」 は、どの「なつやすみ」に帰ろう。" width="900" height="230" border="0" usemap="#Map" />
-          <map name="Map" id="Map">
-            <area shape="rect" coords="59,113,155,205" href="history.html#acbokunatsu" alt="ぼくのなつやすみ" />
-            <area shape="rect" coords="184,58,270,181" href="history.html#acbokunatsu2" alt="ぼくのなつやすみ２　海の冒険篇" />
-            <area shape="rect" coords="305,46,375,162" href="history.html#acbokunatsup1" alt="ぼくのなつやすみポータブル　ムシムシ博士とてっぺん山の秘密!!" />
-            <area shape="rect" coords="409,74,500,189" href="history.html#acbokunatsu3" alt="ぼくのなつやすみ３　－北国篇－　小さなボクの大草原"/>
-            <area shape="rect" coords="533,101,605,220" href="history.html#acbokunatsu4" alt="ぼくのなつやすみ４　瀬戸内少年探偵団「ボクと秘密の地図」" />
-            <area shape="rect" coords="643,69,714,191" href="history.html#acbokunatsup2" alt="ぼくのなつやすみポータブル２　ナゾナゾ姉妹と沈没船の秘密！" />
-          </map>
-        </p>
-        <p id="btn-history"><a href="history.html"><img src="img/btn_history.jpg" alt="ぼくなつヒストリー！ 歴史を振り返る" width="155" height="155" class="over" /></a></p>
-        <div id="social">
-          <div class="facebook"><a href="http://www.facebook.com/share.php?u=http://www.jp.playstation.com/scej/title/bokunatsu/&amp;t=" onClick="window.open(this.href, 'facebookwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;"><img src="img/icon_facebook.gif" alt="facebook" /></a></div>
-          <div class="twitter"><a href="http://twitter.com/share?url=http://www.jp.playstation.com/scej/title/bokunatsu/&amp;text=ぼくのなつやすみ ポータルサイト | プレイステーション&reg; オフィシャルサイト" target="_blank"><img src="img/icon_twitter.gif" alt="" width="20" height="20" /></a></div>
-          <div class="hatebu"><a href="http://b.hatena.ne.jp/entry/http://www.jp.playstation.com/scej/title/bokunatsu/" class="hatena-bookmark-button" data-hatena-bookmark-title="ぼくのなつやすみ ポータルサイト | プレイステーション&reg; オフィシャルサイト" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
-          <div class="mixi"><div data-plugins-type="mixi-favorite" data-service-key="63c57422c0c3ae976250a2cf1098c7dd7efb1a89" data-size="medium" data-href="" data-show-faces="true" data-show-count="true" data-show-comment="true" data-width=""></div><script type="text/javascript">(function(d) {var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//static.mixi.jp/js/plugins.js#lang=ja';d.getElementsByTagName('head')[0].appendChild(s);})(document);</script></div>
-          <div class="plusone"><g:plusone size="medium" href="http://www.jp.playstation.com/scej/title/bokunatsu/" count="false"></g:plusone><script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang:'ja'}</script></div>
-        </div>
-      </div>
-      <div id="bokunatsu-top-bottom-area">
-        <div id="bokunatsu-park-block"> 
-          <p><img src="img/park_base.jpg" alt="ぼくなつパーク コンテンツ 声優（沢城みゆき・他）の対談や観光ガイドなど内容盛りだくさん！" width="575" height="298" /></p>
-          <ul>
-            <li><a href="http://www.jp.playstation.com/scej/title/bokunatsu/p2/park/10th/talk/index-07.html"><img src="img/btn_talk.jpg" alt="ぼくなつトーク" width="166" height="193" class="over" /></a></li>
-            <li><a href="http://www.jp.playstation.com/scej/title/bokunatsu/p2/park/10th/recipe/index-01.html"><img src="img/btn_recipe.jpg" alt="おばちゃんの夕ごはんレシピ" width="167" height="193" class="over" /></a></li>
-            <li><a href="http://www.jp.playstation.com/scej/title/bokunatsu/p2/park/10th/kanko/index.html"><img src="img/btn_kankokyku.jpg" alt="ぼくなつ観光局" width="167" height="193" class="over" /></a></li>
-          </ul>
-        </div>
-        <div id="bokunatsu-news-block"> 
-          <p><img src="img/news_base.jpg" alt="新着情報" width="285" height="298" /></p>
-          <ul>
-            <li><span class="date">2012/07/05</span><br />
-		ぼくのなつやすみポータルサイトリニューアル！<br />
-あの夏がよみがえる！『ぼくのなつやすみポータブル2 ナゾナゾ姉妹と沈没船の秘密！ PSP® the Best』発売決定！<br />
-<a href="./history.html">ぼくなつヒストリー公開！</a>
-</li>
-          </ul>
-        </div>
-      </div>
-      <p id="bokunatsu-copy">&copy;Sony Computer Entertainment Inc. </p>
-    </div>
-	</div>
-
-<!-- page top -->
-
-<!-- footer -->
-        <div id="footerParts">
-        	<div id="global-footer" class="psc-footer-container psc-bg-footer">
-    <div class="psc-footer-row">
-        <ul class="psc-align-center">
-            <li class="psc-cell-footer"><a href="http://www.jp.playstation.com/about/browse/?hfclick=FTR_about">サイトについて</a></li>
-            <li class="psc-cell-footer"><a href="http://www.jp.playstation.com/about/terms-and-conditions/?hfclick=FTR_policy" class="psc-col-white psc-fs12 psc-hover-light">サイトポリシー・利用規約</a></li>
-            <li class="psc-cell-footer"><a href="http://www.jp.playstation.com/about/privacy-policy/?hfclick=FTR_privacy" class="psc-col-white psc-fs12 psc-hover-light">プライバシーポリシー</a></li>
-            <li class="psc-cell-footer"><a href="http://www.jp.playstation.com/about/terms-and-conditions/#intellectual-property">知的財産の表記</a></li>
-            <li class="psc-cell-footer"><a href="http://www.jp.playstation.com/cero/index.html?hfclick=FTR_cero" class="psc-col-white psc-fs12 psc-hover-light">CEROレーティング</a></li>
-            <li class="psc-cell-footer"><a href="https://partners.playstation.net/" class="psc-col-white psc-fs12 psc-hover-light psc-pdr24 psc-icon-blank" target="_blank">Publisher&amp;Developer Relations</a></li>
-            <li class="psc-cell-footer"><a href="http://www.sie.com/" class="psc-col-white psc-fs12 psc-hover-light psc-pdr24 psc-icon-blank" target="_blank" onclick="var s_c=s_gi('sonysceijpplaystationcom'); s_c.tl(true,'o','FTR_SIErecruit');">会社概要・採用情報</a></li>
-        </ul>
-    </div>
-    <div class="psc-row-footer">
-        <!-- Copyrights -->
-        <div class="psc-align-center">
-            <p class="psc-copyrights">©2020 Sony Interactive Entertainment Inc. All Rights Reserved.</p>
-        </div>
-    </div>
-    <div class="psc-row-footer psc-pdt16">
-        <!-- Global Link -->
-        <div class="psc-footer-global">
-            <a class="psc-icon-global" href="https://www.playstation.com/country-selector/index.html?hfclick=FTR_cntryslct">日本 (Japan) </a>
-        </div>
-    </div>
-    <!-- SIE Logo -->
-    <div class="psc-row-footer">
-        <a class="psc-footer-sce" href="http://www.sie.com/" target="_blank" onclick="var s_c=s_gi('sonysceijpplaystationcom'); s_c.tl(true,'o','FTR_SIEcorpLogo');">
-            <img src="//www.jp.playstation.com/content/dam/pscom/regional-assets/footer/sie_logo.png" alt="Sony Interactive Entertainment">
-        </a>
-    </div>
-</div>
-        </div>
-        <!-- TOPに戻る -->
-        <div id="back-to-top" class="psc-back-to-top">
-	        <img src="//www.jp.playstation.com/content/dam/pscom/ja-jp/icon/btn_pagetop.png" alt="トップに戻るボタン">
-        </div>
-        <script>
-        if(typeof jQuery == "undefined")
-        {
-            document.write('<script src="//www.jp.playstation.com/etc/designs/pscom/ja-jp/footer/js/jquery-1.11.1.min.js">');
-            document.write('<\/script>');
-        }
-        </script>
-                <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-9N7G"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-9N7G');</script>
-<!-- End Google Tag Manager -->
-<script src="//www.jp.playstation.com/etc/designs/pscom/ja-jp/footer/js/psc_component.js"></script>
-<script type="text/javascript" src="//www.jp.playstation.com/etc/designs/pscom/ja-jp/footer/js/s_code_pscom.js"></script>
-<script type="text/javascript">
-var userInfoCallback = function(info) {
-    signinStatus(1, info);
+body {
+        font-family: "Century Gothic", 'Lato', sans-serif;
 }
-$(function() { 
-	mainApp.mainHeader();
-	$.ajax({
-	    url: "/sys/account/info",
-	    dataType: "jsonp",
-	    jsonpCallback: "userInfoCallback"
-	});
-});
-</script><!-- /footer -->
 
-</body>
-</html>
+a {
+    text-decoration: none;
+}
+
+.et-hero-tabs,
+.et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #eee;
+        text-align: center;
+        padding: 0 2em;
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+        letter-spacing: 1rem;
+    }
+    h3 {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+        opacity: 0.6;
+    }
+}
+
+.et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 10;
+    &--top {
+        position: fixed;
+        top: 0;
+    }
+}
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+        transition: all 0.5s ease;
+        font-size: 0.8rem;
+      &:hover {
+            color:white;
+      background: rgba(102,177,241,0.8);
+            transition: all 0.5s ease;
+    }
+}
+
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #66B1F1;
+    transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+    .et-hero-tabs,
+    .et-slide {
+    h1 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    }
+    .et-hero-tab {
+        font-size: 1rem;
+    }
+}
